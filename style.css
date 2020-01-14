@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+*::before {
+	box-sizing: border-box;
+}
+
+*::after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+.main {
+	overflow: hidden;
+
+}
+
+.canvas {
+	background-color: rgb(158, 158, 158);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.toolbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.toolbar>li {
+	/* border: 1px solid green; */
+	margin: 3px;
+	min-width: 42px;
+	min-height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toolbar>li>svg {
+	/* border: 1px solid blue; */
+	border-radius: 50%;
+	padding: 0.1em;
+	font-size: 2em;
+}
+
+.toolbar>li.active>svg {
+	color: red;
+	font-size: 2.5em;
+}
+
+
+.toolbar>.linewidth>.range {
+	margin: 0 5px;
+}
+
+.toolbar>.linewidth>.lineWidthShow {
+	width: 3px;
+	height: 28px;
+	background-color: black;
+	margin: 0 5px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: 0px;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: 0px;
+	border-radius: 50%;
+}

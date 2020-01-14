@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cn-zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>canvas 画板</title>
+	<style type="text/css">
+		.icon {
+			width: 1em;
+			height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main>
+		<ul class="toolbar">
+			<li class="pen active">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-pen"></use>
+				</svg>
+			</li>
+			<li class="eraser">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-eraser"></use>
+				</svg>
+			</li>
+			<li class="clear">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-clear1"></use>
+				</svg>
+			</li>
+			<li class="download">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-save"></use>
+				</svg>
+			</li>
+			<li class="color">
+				<input type="color">
+			</li>
+			<li class="linewidth">
+				<input calss="range" type="range" min="1" max="20" value="3">
+				<div class="lineWidthShow"></div>
+			</li>
+		</ul>
+		<canvas class="canvas"></canvas>
+	</main>
+	<script src="//at.alicdn.com/t/font_1385279_z1cff2sh1z.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
