@@ -19,5 +19,5 @@
 
 ## 效果预览图
 
-![preview](image/preview.png)
+![预览图](https://github.com/JaylanWood/canvas-sketch/raw/master/image/preview.png)
 
