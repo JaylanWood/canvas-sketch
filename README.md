@@ -6,7 +6,7 @@
 
 ## 效果预览
 
-[预览地址](https://jaylanwood.github.io/canvas/)
+[预览地址](https://jaylanwood.github.io/canvas-sketch/)
 
 ## 特性
 
@@ -19,5 +19,5 @@
 
 ## 效果预览图
 
-![preview](preview.png)
+![preview](image/preview.png)
 
